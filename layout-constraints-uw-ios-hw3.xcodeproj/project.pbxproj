@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		87BA4CD31AEC59230000F71A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87BA4CD21AEC59230000F71A /* main.m */; };
 		87BA4CD61AEC59230000F71A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87BA4CD51AEC59230000F71A /* AppDelegate.m */; };
-		87BA4CD91AEC59230000F71A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87BA4CD81AEC59230000F71A /* ViewController.m */; };
-		87BA4CDC1AEC59230000F71A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87BA4CDA1AEC59230000F71A /* Main.storyboard */; };
 		87BA4CDE1AEC59230000F71A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87BA4CDD1AEC59230000F71A /* Images.xcassets */; };
 		87BA4CE11AEC59230000F71A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87BA4CDF1AEC59230000F71A /* LaunchScreen.xib */; };
 		87BA4CED1AEC59230000F71A /* layout_constraints_uw_ios_hw3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87BA4CEC1AEC59230000F71A /* layout_constraints_uw_ios_hw3Tests.m */; };
+		87BA4CF91AEC59770000F71A /* ResponsiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87BA4CF71AEC59770000F71A /* ResponsiveViewController.m */; };
+		87BA4CFA1AEC59770000F71A /* ResponsiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87BA4CF81AEC59770000F71A /* ResponsiveViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +32,14 @@
 		87BA4CD21AEC59230000F71A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		87BA4CD41AEC59230000F71A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		87BA4CD51AEC59230000F71A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		87BA4CD71AEC59230000F71A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		87BA4CD81AEC59230000F71A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		87BA4CDB1AEC59230000F71A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87BA4CDD1AEC59230000F71A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		87BA4CE01AEC59230000F71A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		87BA4CE61AEC59230000F71A /* layout-constraints-uw-ios-hw3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "layout-constraints-uw-ios-hw3Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87BA4CEB1AEC59230000F71A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87BA4CEC1AEC59230000F71A /* layout_constraints_uw_ios_hw3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = layout_constraints_uw_ios_hw3Tests.m; sourceTree = "<group>"; };
+		87BA4CF61AEC59770000F71A /* ResponsiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResponsiveViewController.h; path = ../ResponsiveViewController.h; sourceTree = "<group>"; };
+		87BA4CF71AEC59770000F71A /* ResponsiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResponsiveViewController.m; path = ../ResponsiveViewController.m; sourceTree = "<group>"; };
+		87BA4CF81AEC59770000F71A /* ResponsiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ResponsiveViewController.xib; path = ../ResponsiveViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +83,9 @@
 			children = (
 				87BA4CD41AEC59230000F71A /* AppDelegate.h */,
 				87BA4CD51AEC59230000F71A /* AppDelegate.m */,
-				87BA4CD71AEC59230000F71A /* ViewController.h */,
-				87BA4CD81AEC59230000F71A /* ViewController.m */,
-				87BA4CDA1AEC59230000F71A /* Main.storyboard */,
+				87BA4CF61AEC59770000F71A /* ResponsiveViewController.h */,
+				87BA4CF71AEC59770000F71A /* ResponsiveViewController.m */,
+				87BA4CF81AEC59770000F71A /* ResponsiveViewController.xib */,
 				87BA4CDD1AEC59230000F71A /* Images.xcassets */,
 				87BA4CDF1AEC59230000F71A /* LaunchScreen.xib */,
 				87BA4CD01AEC59230000F71A /* Supporting Files */,
@@ -199,9 +199,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87BA4CDC1AEC59230000F71A /* Main.storyboard in Resources */,
 				87BA4CE11AEC59230000F71A /* LaunchScreen.xib in Resources */,
 				87BA4CDE1AEC59230000F71A /* Images.xcassets in Resources */,
+				87BA4CFA1AEC59770000F71A /* ResponsiveViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,8 +219,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87BA4CD91AEC59230000F71A /* ViewController.m in Sources */,
 				87BA4CD61AEC59230000F71A /* AppDelegate.m in Sources */,
+				87BA4CF91AEC59770000F71A /* ResponsiveViewController.m in Sources */,
 				87BA4CD31AEC59230000F71A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,14 +244,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		87BA4CDA1AEC59230000F71A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				87BA4CDB1AEC59230000F71A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		87BA4CDF1AEC59230000F71A /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
