@@ -12,8 +12,6 @@
 		87BA4CDE1AEC59230000F71A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87BA4CDD1AEC59230000F71A /* Images.xcassets */; };
 		87BA4CE11AEC59230000F71A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87BA4CDF1AEC59230000F71A /* LaunchScreen.xib */; };
 		87BA4CED1AEC59230000F71A /* layout_constraints_uw_ios_hw3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87BA4CEC1AEC59230000F71A /* layout_constraints_uw_ios_hw3Tests.m */; };
-		87BA4CF91AEC59770000F71A /* ResponsiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87BA4CF71AEC59770000F71A /* ResponsiveViewController.m */; };
-		87BA4CFA1AEC59770000F71A /* ResponsiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87BA4CF81AEC59770000F71A /* ResponsiveViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +35,6 @@
 		87BA4CE61AEC59230000F71A /* layout-constraints-uw-ios-hw3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "layout-constraints-uw-ios-hw3Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87BA4CEB1AEC59230000F71A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87BA4CEC1AEC59230000F71A /* layout_constraints_uw_ios_hw3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = layout_constraints_uw_ios_hw3Tests.m; sourceTree = "<group>"; };
-		87BA4CF61AEC59770000F71A /* ResponsiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResponsiveViewController.h; path = ../ResponsiveViewController.h; sourceTree = "<group>"; };
-		87BA4CF71AEC59770000F71A /* ResponsiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResponsiveViewController.m; path = ../ResponsiveViewController.m; sourceTree = "<group>"; };
-		87BA4CF81AEC59770000F71A /* ResponsiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ResponsiveViewController.xib; path = ../ResponsiveViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +78,6 @@
 			children = (
 				87BA4CD41AEC59230000F71A /* AppDelegate.h */,
 				87BA4CD51AEC59230000F71A /* AppDelegate.m */,
-				87BA4CF61AEC59770000F71A /* ResponsiveViewController.h */,
-				87BA4CF71AEC59770000F71A /* ResponsiveViewController.m */,
-				87BA4CF81AEC59770000F71A /* ResponsiveViewController.xib */,
 				87BA4CDD1AEC59230000F71A /* Images.xcassets */,
 				87BA4CDF1AEC59230000F71A /* LaunchScreen.xib */,
 				87BA4CD01AEC59230000F71A /* Supporting Files */,
@@ -201,7 +193,6 @@
 			files = (
 				87BA4CE11AEC59230000F71A /* LaunchScreen.xib in Resources */,
 				87BA4CDE1AEC59230000F71A /* Images.xcassets in Resources */,
-				87BA4CFA1AEC59770000F71A /* ResponsiveViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +211,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				87BA4CD61AEC59230000F71A /* AppDelegate.m in Sources */,
-				87BA4CF91AEC59770000F71A /* ResponsiveViewController.m in Sources */,
 				87BA4CD31AEC59230000F71A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
