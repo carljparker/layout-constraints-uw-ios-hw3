@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ResponsiveViewController">
@@ -13,7 +13,91 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="140" placeholderIntrinsicHeight="112" text="47" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ml-Jd-DV0">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
+                        <rect key="frame" x="230" y="133" width="140" height="112"/>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <fontDescription key="fontDescription" type="system" pointSize="105"/>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" type="system" pointSize="105"/>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="120" placeholderIntrinsicHeight="21" text="Seattle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T85-nY-eUR">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
+                        <rect key="frame" x="240" y="88" width="120" height="21"/>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    </variation>
+                </label>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="T85-nY-eUR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="140" id="6vT-R9-8HN"/>
+                <constraint firstItem="T85-nY-eUR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="89" id="Hzl-67-flB"/>
+                <constraint firstItem="T85-nY-eUR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="364" id="IDF-Aa-rTM"/>
+                <constraint firstItem="0ml-Jd-DV0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="129" id="K1K-hh-HuA"/>
+                <constraint firstItem="0ml-Jd-DV0" firstAttribute="top" secondItem="T85-nY-eUR" secondAttribute="bottom" constant="22" id="N6Z-Jr-ax0"/>
+                <constraint firstItem="0ml-Jd-DV0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="130" id="PWa-4a-wh3"/>
+                <constraint firstItem="T85-nY-eUR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="78" id="YXZ-r9-kai"/>
+                <constraint firstItem="0ml-Jd-DV0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="333" id="msw-Ba-1MB"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="0ml-Jd-DV0"/>
+                    <exclude reference="T85-nY-eUR"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="6vT-R9-8HN"/>
+                    <exclude reference="Hzl-67-flB"/>
+                    <exclude reference="IDF-Aa-rTM"/>
+                    <exclude reference="YXZ-r9-kai"/>
+                    <exclude reference="K1K-hh-HuA"/>
+                    <exclude reference="N6Z-Jr-ax0"/>
+                    <exclude reference="PWa-4a-wh3"/>
+                    <exclude reference="msw-Ba-1MB"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular">
+                <mask key="subviews">
+                    <include reference="0ml-Jd-DV0"/>
+                    <include reference="T85-nY-eUR"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="6vT-R9-8HN"/>
+                    <exclude reference="Hzl-67-flB"/>
+                    <exclude reference="IDF-Aa-rTM"/>
+                    <include reference="YXZ-r9-kai"/>
+                    <include reference="K1K-hh-HuA"/>
+                    <exclude reference="N6Z-Jr-ax0"/>
+                    <include reference="PWa-4a-wh3"/>
+                    <exclude reference="msw-Ba-1MB"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=regular">
+                <mask key="constraints">
+                    <include reference="Hzl-67-flB"/>
+                    <include reference="IDF-Aa-rTM"/>
+                    <include reference="N6Z-Jr-ax0"/>
+                    <include reference="msw-Ba-1MB"/>
+                </mask>
+            </variation>
         </view>
     </objects>
 </document>
