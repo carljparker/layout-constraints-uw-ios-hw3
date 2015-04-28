@@ -83,13 +83,9 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="0ml-Jd-DV0" firstAttribute="top" secondItem="T85-nY-eUR" secondAttribute="bottom" constant="30" id="0UR-ZP-6K2"/>
                 <constraint firstAttribute="centerX" secondItem="0ml-Jd-DV0" secondAttribute="centerX" id="9ur-CR-vEZ"/>
-                <constraint firstItem="T85-nY-eUR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="89" id="DTX-dv-5KK"/>
-                <constraint firstAttribute="centerX" secondItem="0ml-Jd-DV0" secondAttribute="centerX" id="Hf5-eJ-ErY"/>
+                <constraint firstItem="T85-nY-eUR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="78" id="DTX-dv-5KK"/>
                 <constraint firstItem="0ml-Jd-DV0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="129" id="K20-LR-sCq"/>
-                <constraint firstItem="0ml-Jd-DV0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="133" id="W6F-6n-Hyp"/>
-                <constraint firstAttribute="centerX" secondItem="T85-nY-eUR" secondAttribute="centerX" id="eUb-gi-WZE"/>
                 <constraint firstAttribute="centerX" secondItem="T85-nY-eUR" secondAttribute="centerX" id="lUf-en-PWv"/>
             </constraints>
             <variation key="default">
@@ -99,13 +95,9 @@
                 </mask>
                 <mask key="constraints">
                     <exclude reference="DTX-dv-5KK"/>
-                    <exclude reference="eUb-gi-WZE"/>
                     <exclude reference="lUf-en-PWv"/>
-                    <exclude reference="0UR-ZP-6K2"/>
                     <exclude reference="9ur-CR-vEZ"/>
-                    <exclude reference="Hf5-eJ-ErY"/>
                     <exclude reference="K20-LR-sCq"/>
-                    <exclude reference="W6F-6n-Hyp"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular">
@@ -116,9 +108,9 @@
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
                 <mask key="constraints">
-                    <include reference="eUb-gi-WZE"/>
-                    <include reference="0UR-ZP-6K2"/>
-                    <include reference="Hf5-eJ-ErY"/>
+                    <include reference="DTX-dv-5KK"/>
+                    <include reference="lUf-en-PWv"/>
+                    <include reference="9ur-CR-vEZ"/>
                     <include reference="K20-LR-sCq"/>
                 </mask>
             </variation>
@@ -127,7 +119,7 @@
                     <include reference="DTX-dv-5KK"/>
                     <include reference="lUf-en-PWv"/>
                     <include reference="9ur-CR-vEZ"/>
-                    <include reference="W6F-6n-Hyp"/>
+                    <include reference="K20-LR-sCq"/>
                 </mask>
             </variation>
         </view>
