@@ -167,27 +167,6 @@
                         </mask>
                     </variation>
                 </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="40 F" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aQq-w8-Lv6">
-                    <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="97" id="hJc-hR-BCg"/>
-                        <constraint firstAttribute="height" constant="30" id="hXg-sQ-yJd"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="hJc-hR-BCg"/>
-                            <exclude reference="hXg-sQ-yJd"/>
-                        </mask>
-                    </variation>
-                    <variation key="heightClass=regular-widthClass=compact">
-                        <mask key="constraints">
-                            <include reference="hJc-hR-BCg"/>
-                            <include reference="hXg-sQ-yJd"/>
-                        </mask>
-                    </variation>
-                </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="41 F" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IlX-LU-jf8">
                     <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                     <constraints>
@@ -209,15 +188,36 @@
                         </mask>
                     </variation>
                 </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="40 F" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aQq-w8-Lv6">
+                    <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="97" id="hJc-hR-BCg"/>
+                        <constraint firstAttribute="height" constant="30" id="hXg-sQ-yJd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="hJc-hR-BCg"/>
+                            <exclude reference="hXg-sQ-yJd"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="hJc-hR-BCg"/>
+                            <include reference="hXg-sQ-yJd"/>
+                        </mask>
+                    </variation>
+                </textField>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="ZQ2-Ss-I3C" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="235" id="5TE-hA-Xou"/>
                 <constraint firstAttribute="centerX" secondItem="0ml-Jd-DV0" secondAttribute="centerX" id="9ur-CR-vEZ"/>
                 <constraint firstItem="jlD-zJ-iSI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="293" id="A9A-An-jXU"/>
+                <constraint firstItem="cxh-Sh-beA" firstAttribute="leading" secondItem="aQq-w8-Lv6" secondAttribute="leading" id="CXr-BH-kLo"/>
                 <constraint firstItem="T85-nY-eUR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="78" id="DTX-dv-5KK"/>
                 <constraint firstItem="0ml-Jd-DV0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="129" id="K20-LR-sCq"/>
-                <constraint firstAttribute="trailing" secondItem="cxh-Sh-beA" secondAttribute="trailing" constant="8" id="UOt-SH-uzo"/>
                 <constraint firstAttribute="trailing" secondItem="aQq-w8-Lv6" secondAttribute="trailing" constant="8" id="Y2R-As-8qY"/>
                 <constraint firstItem="aQq-w8-Lv6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="255" id="a6W-Gt-i2m"/>
                 <constraint firstItem="IlX-LU-jf8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="284" id="gjt-lW-bzD"/>
@@ -237,8 +237,8 @@
                     <exclude reference="VgP-jT-fY8"/>
                     <exclude reference="jlD-zJ-iSI"/>
                     <exclude reference="cxh-Sh-beA"/>
-                    <exclude reference="aQq-w8-Lv6"/>
                     <exclude reference="IlX-LU-jf8"/>
+                    <exclude reference="aQq-w8-Lv6"/>
                 </mask>
                 <mask key="constraints">
                     <exclude reference="DTX-dv-5KK"/>
@@ -251,7 +251,7 @@
                     <exclude reference="u5j-ta-g9Y"/>
                     <exclude reference="A9A-An-jXU"/>
                     <exclude reference="jsq-iR-jM6"/>
-                    <exclude reference="UOt-SH-uzo"/>
+                    <exclude reference="CXr-BH-kLo"/>
                     <exclude reference="jht-cv-3Nn"/>
                     <exclude reference="Y2R-As-8qY"/>
                     <exclude reference="a6W-Gt-i2m"/>
@@ -271,8 +271,8 @@
                     <include reference="VgP-jT-fY8"/>
                     <include reference="jlD-zJ-iSI"/>
                     <include reference="cxh-Sh-beA"/>
-                    <include reference="aQq-w8-Lv6"/>
                     <include reference="IlX-LU-jf8"/>
+                    <include reference="aQq-w8-Lv6"/>
                 </mask>
                 <mask key="constraints">
                     <include reference="DTX-dv-5KK"/>
@@ -285,7 +285,7 @@
                     <include reference="u5j-ta-g9Y"/>
                     <include reference="A9A-An-jXU"/>
                     <include reference="jsq-iR-jM6"/>
-                    <include reference="UOt-SH-uzo"/>
+                    <include reference="CXr-BH-kLo"/>
                     <include reference="jht-cv-3Nn"/>
                     <include reference="Y2R-As-8qY"/>
                     <include reference="a6W-Gt-i2m"/>
@@ -294,11 +294,31 @@
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=regular">
+                <mask key="subviews">
+                    <include reference="ZQ2-Ss-I3C"/>
+                    <include reference="VgP-jT-fY8"/>
+                    <include reference="jlD-zJ-iSI"/>
+                    <include reference="cxh-Sh-beA"/>
+                    <include reference="IlX-LU-jf8"/>
+                    <include reference="aQq-w8-Lv6"/>
+                </mask>
                 <mask key="constraints">
                     <include reference="DTX-dv-5KK"/>
                     <include reference="lUf-en-PWv"/>
                     <include reference="9ur-CR-vEZ"/>
                     <include reference="K20-LR-sCq"/>
+                    <include reference="5TE-hA-Xou"/>
+                    <include reference="wyM-Pu-U4u"/>
+                    <include reference="o9R-b1-7il"/>
+                    <include reference="u5j-ta-g9Y"/>
+                    <include reference="A9A-An-jXU"/>
+                    <include reference="jsq-iR-jM6"/>
+                    <include reference="CXr-BH-kLo"/>
+                    <include reference="jht-cv-3Nn"/>
+                    <include reference="Y2R-As-8qY"/>
+                    <include reference="a6W-Gt-i2m"/>
+                    <include reference="gjt-lW-bzD"/>
+                    <include reference="wgL-WI-PKf"/>
                 </mask>
             </variation>
         </view>
