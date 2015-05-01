@@ -9,6 +9,8 @@
                 <outlet property="tempAM08" destination="cxh-Sh-beA" id="jHd-FF-9g3"/>
                 <outlet property="tempAM09" destination="aQq-w8-Lv6" id="sQl-Qj-WbE"/>
                 <outlet property="tempAM10" destination="IlX-LU-jf8" id="yvR-ba-cT9"/>
+                <outlet property="timeSunrise" destination="btq-vb-W4k" id="iQE-7h-2bw"/>
+                <outlet property="timeSunset" destination="WHg-aZ-SKw" id="ITt-sf-p2w"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -111,6 +113,31 @@
                         </mask>
                     </variation>
                 </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunrise" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lef-Zz-mFp">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=compact-widthClass=regular" fixedFrame="YES">
+                        <rect key="frame" x="605" y="143" width="61" height="21"/>
+                    </variation>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sunrise" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="btq-vb-W4k">
+                    <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <variation key="heightClass=compact-widthClass=regular" fixedFrame="YES">
+                        <rect key="frame" x="674" y="134" width="97" height="30"/>
+                    </variation>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sunset" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WHg-aZ-SKw">
+                    <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <variation key="heightClass=compact-widthClass=regular" fixedFrame="YES">
+                        <rect key="frame" x="674" y="163" width="97" height="30"/>
+                    </variation>
+                </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8 AM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQ2-Ss-I3C">
                     <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                     <constraints>
@@ -284,6 +311,15 @@
                         </mask>
                     </variation>
                 </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunset" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDP-Cr-80m">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=compact-widthClass=regular" fixedFrame="YES">
+                        <rect key="frame" x="605" y="172" width="61" height="21"/>
+                    </variation>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -349,12 +385,16 @@
                 <mask key="subviews">
                     <exclude reference="T85-nY-eUR"/>
                     <exclude reference="0ml-Jd-DV0"/>
+                    <exclude reference="Lef-Zz-mFp"/>
+                    <exclude reference="btq-vb-W4k"/>
+                    <exclude reference="WHg-aZ-SKw"/>
                     <exclude reference="ZQ2-Ss-I3C"/>
                     <exclude reference="VgP-jT-fY8"/>
                     <exclude reference="cxh-Sh-beA"/>
                     <exclude reference="aQq-w8-Lv6"/>
                     <exclude reference="jlD-zJ-iSI"/>
                     <exclude reference="IlX-LU-jf8"/>
+                    <exclude reference="UDP-Cr-80m"/>
                 </mask>
                 <mask key="constraints">
                     <exclude reference="9ur-CR-vEZ"/>
@@ -428,6 +468,10 @@
             <variation key="heightClass=compact-widthClass=regular">
                 <mask key="subviews">
                     <include reference="0ml-Jd-DV0"/>
+                    <include reference="Lef-Zz-mFp"/>
+                    <include reference="btq-vb-W4k"/>
+                    <include reference="WHg-aZ-SKw"/>
+                    <include reference="UDP-Cr-80m"/>
                 </mask>
                 <mask key="constraints">
                     <include reference="TZg-mY-93V"/>

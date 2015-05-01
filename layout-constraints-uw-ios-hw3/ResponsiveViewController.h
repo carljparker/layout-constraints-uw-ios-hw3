@@ -14,4 +14,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *tempAM09;
 @property (weak, nonatomic) IBOutlet UITextField *tempAM10;
 
+@property (weak, nonatomic) IBOutlet UITextField *timeSunrise;
+@property (weak, nonatomic) IBOutlet UITextField *timeSunset;
+
 @end
