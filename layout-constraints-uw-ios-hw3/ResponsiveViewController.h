@@ -10,4 +10,8 @@
 
 @interface ResponsiveViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *tempAM08;
+@property (weak, nonatomic) IBOutlet UITextField *tempAM09;
+@property (weak, nonatomic) IBOutlet UITextField *tempAM10;
+
 @end
