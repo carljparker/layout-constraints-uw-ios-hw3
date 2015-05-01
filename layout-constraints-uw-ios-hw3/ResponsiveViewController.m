@@ -45,12 +45,19 @@
         
     }
     
+    //
+    // Extract and log the city name
+    //
     NSDictionary *wDataDict = temp[0];
-    
     NSString *city = wDataDict[@"City"];
-    
     NSLog(@"%@", city);
-
+    
+    NSArray *temperatures = (NSArray *) wDataDict[@"HourlyForecast"];
+    
+    NSNumber *tempData = temperatures[8];
+    
+    self.tempAM08.text = [NSString stringWithFormat:@"%@ F", tempData];
+    
     
 }
 
