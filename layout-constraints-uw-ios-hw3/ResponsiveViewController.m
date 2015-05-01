@@ -54,9 +54,9 @@
     
     NSArray *temperatures = (NSArray *) wDataDict[@"HourlyForecast"];
     
-    NSNumber *tempData = temperatures[8];
-    
-    self.tempAM08.text = [NSString stringWithFormat:@"%@ F", tempData];
+    self.tempAM08.text = [NSString stringWithFormat:@"%@ F", temperatures[8]];
+    self.tempAM09.text = [NSString stringWithFormat:@"%@ F", temperatures[9]];
+    self.tempAM10.text = [NSString stringWithFormat:@"%@ F", temperatures[10]];
     
     
 }
