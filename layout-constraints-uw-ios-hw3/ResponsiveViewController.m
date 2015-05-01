@@ -16,22 +16,43 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    NSError *errorDesc = nil;
+    
+    NSPropertyListFormat format;
+    
+    NSString *plistPath;
+    
+    NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
+                                                              
+                                                              NSUserDomainMask, YES) objectAtIndex:0];
+    
+    plistPath = [rootPath stringByAppendingPathComponent:@"WeatherData.plist"];
+    
+    if (![[NSFileManager defaultManager] fileExistsAtPath:plistPath]) {
+        
+        plistPath = [[NSBundle mainBundle] pathForResource:@"WeatherData" ofType:@"plist"];
+        
+    }
+    
+    NSData *plistXML = [[NSFileManager defaultManager] contentsAtPath:plistPath];
+    
+    NSDictionary *temp = (NSDictionary *)[NSPropertyListSerialization
+                                          
+                                          propertyListWithData:plistXML
+                                          
+                                          options:NSPropertyListMutableContainersAndLeaves
+                                          
+                                          format:&format
+                                          
+                                          error:&errorDesc];
+    
+    if (!temp) {
+        
+        NSLog(@"Error reading plist: %@, format: %lu", errorDesc, format);
+        
+    }
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

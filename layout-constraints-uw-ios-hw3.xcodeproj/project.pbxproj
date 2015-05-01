@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8791E89D1AF30FDA00AD1264 /* WeatherData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8791E89C1AF30FDA00AD1264 /* WeatherData.plist */; };
 		87BA4CD31AEC59230000F71A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87BA4CD21AEC59230000F71A /* main.m */; };
 		87BA4CD61AEC59230000F71A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87BA4CD51AEC59230000F71A /* AppDelegate.m */; };
 		87BA4CDE1AEC59230000F71A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87BA4CDD1AEC59230000F71A /* Images.xcassets */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8791E89C1AF30FDA00AD1264 /* WeatherData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WeatherData.plist; sourceTree = "<group>"; };
 		87BA4CCD1AEC59230000F71A /* layout-constraints-uw-ios-hw3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "layout-constraints-uw-ios-hw3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87BA4CD11AEC59230000F71A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87BA4CD21AEC59230000F71A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				87BA4CFB1AEC5AEC0000F71A /* ResponsiveViewController.h */,
 				87BA4CFC1AEC5AEC0000F71A /* ResponsiveViewController.m */,
 				87BA4CFD1AEC5AEC0000F71A /* ResponsiveViewController.xib */,
+				8791E89C1AF30FDA00AD1264 /* WeatherData.plist */,
 				87BA4CDD1AEC59230000F71A /* Images.xcassets */,
 				87BA4CDF1AEC59230000F71A /* LaunchScreen.xib */,
 				87BA4CD01AEC59230000F71A /* Supporting Files */,
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87BA4CE11AEC59230000F71A /* LaunchScreen.xib in Resources */,
+				8791E89D1AF30FDA00AD1264 /* WeatherData.plist in Resources */,
 				87BA4CDE1AEC59230000F71A /* Images.xcassets in Resources */,
 				87BA4CFF1AEC5AEC0000F71A /* ResponsiveViewController.xib in Resources */,
 			);
@@ -406,6 +410,7 @@
 				87BA4CF21AEC59230000F71A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		87BA4CF31AEC59230000F71A /* Build configuration list for PBXNativeTarget "layout-constraints-uw-ios-hw3Tests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +419,7 @@
 				87BA4CF51AEC59230000F71A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
