@@ -141,6 +141,12 @@
                             <include reference="udu-aT-3vb"/>
                         </mask>
                     </variation>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <mask key="constraints">
+                            <include reference="tQo-W1-eOh"/>
+                            <include reference="udu-aT-3vb"/>
+                        </mask>
+                    </variation>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9 AM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VgP-jT-fY8">
                     <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
@@ -164,6 +170,12 @@
                         </mask>
                     </variation>
                     <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="V3z-C6-6aC"/>
+                            <include reference="nhz-ZO-oZe"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular">
                         <mask key="constraints">
                             <include reference="V3z-C6-6aC"/>
                             <include reference="nhz-ZO-oZe"/>
@@ -198,6 +210,12 @@
                             <include reference="uht-Zn-L4U"/>
                         </mask>
                     </variation>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <mask key="constraints">
+                            <include reference="bcM-t5-GPl"/>
+                            <include reference="uht-Zn-L4U"/>
+                        </mask>
+                    </variation>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0 F" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aQq-w8-Lv6">
                     <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
@@ -222,6 +240,12 @@
                         </mask>
                     </variation>
                     <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="hJc-hR-BCg"/>
+                            <include reference="hXg-sQ-yJd"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular">
                         <mask key="constraints">
                             <include reference="hJc-hR-BCg"/>
                             <include reference="hXg-sQ-yJd"/>
@@ -255,6 +279,12 @@
                             <include reference="l21-PU-aBW"/>
                         </mask>
                     </variation>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <mask key="constraints">
+                            <include reference="Tzv-Rf-Alx"/>
+                            <include reference="l21-PU-aBW"/>
+                        </mask>
+                    </variation>
                 </label>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1 F" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IlX-LU-jf8">
                     <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
@@ -279,6 +309,12 @@
                         </mask>
                     </variation>
                     <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Ev6-ci-nLG"/>
+                            <include reference="Nvn-1j-1zq"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular">
                         <mask key="constraints">
                             <include reference="Ev6-ci-nLG"/>
                             <include reference="Nvn-1j-1zq"/>
@@ -582,11 +618,31 @@
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=regular">
+                <mask key="subviews">
+                    <include reference="ZQ2-Ss-I3C"/>
+                    <include reference="VgP-jT-fY8"/>
+                    <include reference="cxh-Sh-beA"/>
+                    <include reference="aQq-w8-Lv6"/>
+                    <include reference="jlD-zJ-iSI"/>
+                    <include reference="IlX-LU-jf8"/>
+                </mask>
                 <mask key="constraints">
                     <include reference="9ur-CR-vEZ"/>
                     <include reference="K20-LR-sCq"/>
+                    <include reference="gjt-lW-bzD"/>
+                    <include reference="wgL-WI-PKf"/>
                     <include reference="DTX-dv-5KK"/>
                     <include reference="lUf-en-PWv"/>
+                    <include reference="o9R-b1-7il"/>
+                    <include reference="u5j-ta-g9Y"/>
+                    <include reference="5TE-hA-Xou"/>
+                    <include reference="wyM-Pu-U4u"/>
+                    <include reference="Y2R-As-8qY"/>
+                    <include reference="a6W-Gt-i2m"/>
+                    <include reference="UOt-SH-uzo"/>
+                    <include reference="jht-cv-3Nn"/>
+                    <include reference="A9A-An-jXU"/>
+                    <include reference="jsq-iR-jM6"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="545" y="407"/>
