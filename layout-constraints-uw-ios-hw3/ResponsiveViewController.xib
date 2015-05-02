@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ResponsiveViewController">
@@ -427,7 +428,7 @@
                 <constraint firstAttribute="centerX" secondItem="VgP-jT-fY8" secondAttribute="centerX" constant="-0.5" id="Nwp-hT-eU0"/>
                 <constraint firstItem="T85-nY-eUR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="P3T-Fr-EWs"/>
                 <constraint firstAttribute="trailing" secondItem="btq-vb-W4k" secondAttribute="trailing" constant="29" id="TA6-OK-MdO"/>
-                <constraint firstItem="0ml-Jd-DV0" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" constant="15" id="TZg-mY-93V">
+                <constraint firstItem="0ml-Jd-DV0" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailingMargin" constant="15" id="TZg-mY-93V">
                     <variation key="heightClass=compact-widthClass=compact" constant="8"/>
                     <variation key="heightClass=compact-widthClass=regular" constant="-8"/>
                 </constraint>
