@@ -48,15 +48,28 @@
     //
     // Extract and log the city name
     //
+    // We don't display it in the UI;
+    // I have hardcoded it there.
+    // That is how I interpreted the assignment.
+    //
     NSDictionary *wDataDict = temp[0];
     NSString *city = wDataDict[@"City"];
     NSLog(@"%@", city);
     
+    //
+    // Extract and display the temperatures
+    //
     NSArray *temperatures = (NSArray *) wDataDict[@"HourlyForecast"];
     
     self.tempAM08.text = [NSString stringWithFormat:@"%@ F", temperatures[8]];
     self.tempAM09.text = [NSString stringWithFormat:@"%@ F", temperatures[9]];
     self.tempAM10.text = [NSString stringWithFormat:@"%@ F", temperatures[10]];
+    
+    //
+    // Sunrise & Sunset Times
+    //
+    self.timeSunrise.text = wDataDict[@"Sunrise"];
+    self.timeSunset.text = wDataDict[@"Sunset"];
     
     
 }
