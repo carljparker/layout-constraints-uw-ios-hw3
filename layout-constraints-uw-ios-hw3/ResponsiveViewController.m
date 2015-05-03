@@ -41,7 +41,8 @@
                                           error:&errorDesc];
     if (!temp) {
         
-        NSLog(@"Error reading plist: %@, format: %lu", errorDesc, format);
+        NSLog(@"Error reading plist: %@, format: %u", errorDesc, format);
+    
         
     }
     
