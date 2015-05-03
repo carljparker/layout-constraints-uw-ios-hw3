@@ -322,6 +322,28 @@
                         </mask>
                     </variation>
                 </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunrise" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lef-Zz-mFp">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="VpX-f9-L0g"/>
+                        <constraint firstAttribute="width" constant="58" id="cwR-tg-Jx4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="VpX-f9-L0g"/>
+                            <exclude reference="cwR-tg-Jx4"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=compact-widthClass=regular">
+                        <mask key="constraints">
+                            <include reference="VpX-f9-L0g"/>
+                            <include reference="cwR-tg-Jx4"/>
+                        </mask>
+                    </variation>
+                </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunset" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDP-Cr-80m">
                     <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                     <constraints>
@@ -387,28 +409,6 @@
                         </mask>
                     </variation>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunrise" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lef-Zz-mFp">
-                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="21" id="VpX-f9-L0g"/>
-                        <constraint firstAttribute="width" constant="58" id="cwR-tg-Jx4"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="VpX-f9-L0g"/>
-                            <exclude reference="cwR-tg-Jx4"/>
-                        </mask>
-                    </variation>
-                    <variation key="heightClass=compact-widthClass=regular">
-                        <mask key="constraints">
-                            <include reference="VpX-f9-L0g"/>
-                            <include reference="cwR-tg-Jx4"/>
-                        </mask>
-                    </variation>
-                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -423,8 +423,12 @@
                 <constraint firstItem="T85-nY-eUR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="78" id="DTX-dv-5KK"/>
                 <constraint firstItem="WHg-aZ-SKw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="163" id="Gnb-RD-gqx"/>
                 <constraint firstItem="0ml-Jd-DV0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="129" id="K20-LR-sCq"/>
-                <constraint firstItem="Lef-Zz-mFp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="143" id="KZJ-SR-zg7"/>
-                <constraint firstItem="UDP-Cr-80m" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="172" id="Mde-1C-NC0"/>
+                <constraint firstItem="Lef-Zz-mFp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="143" id="KZJ-SR-zg7">
+                    <variation key="heightClass=compact-widthClass=regular" constant="138"/>
+                </constraint>
+                <constraint firstItem="UDP-Cr-80m" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="172" id="Mde-1C-NC0">
+                    <variation key="heightClass=compact-widthClass=regular" constant="167"/>
+                </constraint>
                 <constraint firstAttribute="centerX" secondItem="VgP-jT-fY8" secondAttribute="centerX" constant="-0.5" id="Nwp-hT-eU0"/>
                 <constraint firstItem="T85-nY-eUR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="P3T-Fr-EWs"/>
                 <constraint firstAttribute="trailing" secondItem="btq-vb-W4k" secondAttribute="trailing" constant="29" id="TA6-OK-MdO"/>
@@ -490,9 +494,9 @@
                     <exclude reference="aQq-w8-Lv6"/>
                     <exclude reference="jlD-zJ-iSI"/>
                     <exclude reference="IlX-LU-jf8"/>
+                    <exclude reference="Lef-Zz-mFp"/>
                     <exclude reference="UDP-Cr-80m"/>
                     <exclude reference="T85-nY-eUR"/>
-                    <exclude reference="Lef-Zz-mFp"/>
                 </mask>
                 <mask key="constraints">
                     <exclude reference="9ur-CR-vEZ"/>
@@ -574,8 +578,8 @@
                     <include reference="0ml-Jd-DV0"/>
                     <include reference="btq-vb-W4k"/>
                     <include reference="WHg-aZ-SKw"/>
-                    <include reference="UDP-Cr-80m"/>
                     <include reference="Lef-Zz-mFp"/>
+                    <include reference="UDP-Cr-80m"/>
                 </mask>
                 <mask key="constraints">
                     <include reference="TZg-mY-93V"/>
